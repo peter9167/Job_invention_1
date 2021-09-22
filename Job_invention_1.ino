@@ -80,8 +80,8 @@ void WaterLevelSensor(int water)
   Serial.print("Water: ");
   Serial.println(water); 
   if(water == 1){
-    digitalWrite(pump, LOW);
-  } else{
     digitalWrite(pump, HIGH);
+  } else{
+    digitalWrite(pump, LOW);
   }
 }
